@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_add_circle_black_24dp.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/roundshape.xml" value="0.24" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/contact_item.xml" value="0.25301204819277107" />
+        <entry key="app/src/main/res/layout/fragment_add_contact.xml" value="0.3094660069820655" />
+        <entry key="app/src/main/res/layout/fragment_contact_detail.xml" value="0.26582278481012656" />
+        <entry key="app/src/main/res/layout/fragment_contact_list.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/roundshape.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/temp.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/menu/contact_detail_menu.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/menu/list_menu.xml" value="0.2947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

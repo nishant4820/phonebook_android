@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddContactFragment">
+
+
+    <ImageView
+        android:id="@+id/contact_photo_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/contact_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="16dp"
+        app:srcCompat="@drawable/blank_photo"
+        tools:srcCompat="@drawable/blank_photo" />
+
+    <EditText
+        android:id="@+id/contact_name_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="Enter Contact Name"
+        android:inputType="text|textCapWords"
+        android:background="@drawable/roundshape"
+        android:minHeight="40dp"
+        android:paddingStart="20dp"
+        android:maxLength="20"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contact_photo_add"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/roundshape"
+        android:text="Save Contact"
+        app:layout_constraintStart_toStartOf="@+id/contact_address_add"
+        app:layout_constraintTop_toBottomOf="@+id/contact_address_add" />
+
+    <ImageButton
+        android:id="@+id/photo_from_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintStart_toStartOf="@+id/contact_photo_add"
+        app:layout_constraintTop_toBottomOf="@+id/contact_photo_add" />
+
+    <ImageButton
+        android:id="@+id/photo_from_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintStart_toStartOf="@+id/photo_from_camera"
+        app:layout_constraintTop_toBottomOf="@+id/photo_from_camera" />
+
+    <EditText
+        android:id="@+id/contact_number_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:background="@drawable/roundshape"
+        android:minHeight="40dp"
+        android:maxLength="10"
+        android:paddingStart="20dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/contact_name_add"
+        app:layout_constraintTop_toBottomOf="@+id/contact_name_add" />
+
+    <EditText
+        android:id="@+id/contact_address_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:background="@drawable/roundshape"
+        android:minHeight="40dp"
+        android:maxLength="50"
+        android:paddingStart="20dp"
+        android:hint="Enter Postal Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toStartOf="@+id/contact_number_add"
+        app:layout_constraintTop_toBottomOf="@+id/contact_number_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

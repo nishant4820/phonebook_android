@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/contactListFragment">
+
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:name="com.hackblasters.phonebook2.ui.ContactListFragment"
+        android:label="fragment_contact_list"
+        tools:layout="@layout/fragment_contact_list" >
+        <action
+            android:id="@+id/action_contactListFragment_to_contactDetailFragment"
+            app:destination="@id/contactDetailFragment"
+            app:popUpTo="@id/contactListFragment"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="id"
+                android:defaultValue="0L" />
+        </action>
+        <action
+            android:id="@+id/action_contactListFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" >
+            <argument
+                android:name="id"
+                android:defaultValue="0L" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/contactDetailFragment"
+        android:name="com.hackblasters.phonebook2.ui.ContactDetailFragment"
+        android:label="fragment_contact_detail"
+        tools:layout="@layout/fragment_contact_detail" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <action
+            android:id="@+id/action_contactDetailFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.hackblasters.phonebook2.ui.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>

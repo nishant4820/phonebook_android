@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Phonebook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="sno">Sr. No.</string>
+    <string name="name">John Doe</string>
+    <string name="mobile">+91 9843247532</string>
+
+    <string name="no_app_csv">No app to read CSV file</string>
+
+    <string name="camera_permission">"We need your permission to take a photo.
+        When asked please give the permission"</string>
+    <string name="camera_permission_denied">Permission denied to use camera</string>
+    <string name="file_create_error">Error occurred while creating file: %1$s</string>
+    <string name="contact_photo">Contact Photo</string>
+</resources>
